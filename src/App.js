@@ -22,10 +22,12 @@ class App extends Component {
 
   addTodo = (todo) => {
     todo.id = Math.random() * 10;
-    let todos = [...this.state.todos, todo]
-    this.setState({
-      todos
-    })
+    if (todo.content !== '') {
+      let todos = [...this.state.todos, todo]
+      this.setState({
+        todos
+      })
+    }
   }
 
   render() {
