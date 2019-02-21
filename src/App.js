@@ -29,6 +29,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.todos)
     return (
       <div className="todo-app container">
         <h1 className="center blue-text">Nero's Todo Tracker</h1>
