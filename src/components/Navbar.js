@@ -7,9 +7,9 @@ export default class Navbar extends Component {
           <div className='container'>
             <a className='brand-logo'>Nero's Todo List</a>
             <ul className='right'>
-                <li><a href="/"></a>Home</li>
-                <li><a href="/about"></a>About</li>
-                <li><a href="/contact"></a>Contact</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
       </nav>
