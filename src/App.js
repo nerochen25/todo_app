@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Todos from './Todos';
 import AddTodo from './AddTodo';
+import Home from './components/Home';
 
 class App extends Component {
   state = {
@@ -34,6 +35,7 @@ class App extends Component {
     console.log(this.state.todos)
     return (
       <div className="todo-app container">
+        <Home />
         <h1 className="center blue-text">Nero's Todo Tracker</h1>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
         <AddTodo addTodo={this.addTodo}/>
